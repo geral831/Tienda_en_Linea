@@ -102,3 +102,68 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		
 ```
 
+### Código HTML
+
+```html
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InicioSesiónAdministrador</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        body{ font: 14px sans-serif; }
+        .wrapper{ width: 350px; padding: 40px; margin-left:35%; margin-top:30pt}
+        body{
+        background-repeat: no-repeat;
+        background-size: cover; 
+        
+        background-attachment: fixed;
+        min-height: 90%;
+      }
+    </style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Online Store</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>    
+
+<div class="wrapper">
+        <h2>Iniciar Sesión como Administrador</h2>
+        <p>Ingresa tus datos.</p>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div class="form-group <?php echo (!empty($nameAdmin_err)) ? 'has-error' : ''; ?>">
+                <label>Nombre Adminstrador</label>
+                <input type="text" name="nameAdmin" class="form-control" value="<?php echo $nameAdmin; ?>"> 
+                <span class="help-block"><?php echo $nameAdmin_err; ?></span>
+            </div>    
+            <div class="form-group <?php echo (!empty($contrasenia_err)) ? 'has-error' : ''; ?>">
+                <label>Contraseña</label>
+                <input type="password" name="contrasenia" class="form-control">
+                <span class="help-block"><?php echo $contrasenia_err; ?></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Iniciar Sesión">
+            </div>
+            <p>¿No tienes una cuenta? <a href="#"> Crear una cuenta</a>.</p>
+        </form>
+    </div>    
+
+
+    
+</body>
+</html>
+```
