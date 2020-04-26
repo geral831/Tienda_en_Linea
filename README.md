@@ -5,7 +5,7 @@
 ![](https://github.com/geral831/Tienda_en_Linea/blob/master/Docs/cu12.png)
 
 ### Código PHP
-```java
+```php
 		
 <?php
 //Inicializa la sesion 
