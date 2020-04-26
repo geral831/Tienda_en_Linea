@@ -1,5 +1,5 @@
 # Tienda_en_Linea
-
+Una tienda de ropa de área local hace solicitud a un sistema de compra - venta en línea y de control administrativo de la misma.
 ### Caso de uso 12: Inicio de sesión del Administrador
 
 ![](https://github.com/geral831/Tienda_en_Linea/blob/master/Docs/cu12.png)
