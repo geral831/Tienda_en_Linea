@@ -5,8 +5,9 @@
 ![](https://github.com/geral831/Tienda_en_Linea/blob/master/Docs/cu12.png)
 
 ### Código PHP
-
-<?php
+```
+		
+	<?php
 //Inicializa la sesion 
 session_start();
 //Verifica si el usuario ha iniciado sesion 
@@ -98,4 +99,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
 
+		
+```
 
